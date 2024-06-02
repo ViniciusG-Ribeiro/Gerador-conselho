@@ -46,12 +46,25 @@ body{
     width: 60px;
     height: 60px;
     transform: translateY(50%);
+    cursor: pointer;
 }
 
 .botao:houver{
     color: #53ffab;
-    cursor: pointer;
     box-shadow: 0 5px 15px var(--advice-dice-color);
+}
+
+.icon{
+    animation: expand 3s infinite forwards
+}
+
+@-webkit-keyframes expand{
+    0%{-webkit-transform: scale(1);
+        transform: scale(1);} 
+    20%{-webkit-transform: scale(1.2);
+        transform: scale(1.2);}
+    40%{-webkit-transform: scale(1);
+        transform: scale(1);}
 }
 
 :root{
